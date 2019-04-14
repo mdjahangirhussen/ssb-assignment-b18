@@ -9,11 +9,14 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/fav.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
 
     <!-- Font-awesome CSS -->
     <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
@@ -21,12 +24,13 @@
     <title>lorem Ipsum</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#demo" data-offset="100">
 
+    <!--   <div id="preloader"></div>-->
     <!--    Start Header section-->
-    <header id=main-menu>
+    <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg   navbar-light fixed-top">
+        <nav id="demo" class="navbar navbar-dark  navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,23 +39,23 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">HOME</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#main-slider">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SKILLS</a>
+                            <a class="nav-link" href="#skills">SKILLS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#resume">RESUME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">WORKS</a>
+                            <a class="nav-link" href="#work">WORKS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -60,14 +64,14 @@
     </header><!--    End Header section-->
 
     <!--    Start Banner-section-->
-    <section class="banner-section">
+    <section class="banner-section" id=main-slider>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100 img-fluid" src="images/banner.png" alt="First slide">
                     <div class="carousel-caption d-none d-sm-block">
                         <div class="carousel-caption-content">
-                            <h5><span>I am</span> LOREM IPSUM</h5>
+                            <h5><span>I am</span> JAHANGIR HUSSEN</h5>
                             <p>Professional Web Designer & DeveloperInvolved with the
                                 latest web frameworks and technologies. If you have a
                                 project then feel free to contact me.</p>
@@ -92,7 +96,7 @@
                     <img class="d-block w-100 img-fluid" src="images/banner.png" alt="First slide">
                     <div class="carousel-caption d-none d-sm-block">
                         <div class="carousel-caption-content">
-                            <h5><span>I am</span> LOREM IPSUM</h5>
+                            <h5><span>I am</span> JAHANGIR HUSSEN</h5>
                             <p>Professional Web Designer & DeveloperInvolved with the
                                 latest web frameworks and technologies. If you have a
                                 project then feel free to contact me.</p>
@@ -117,7 +121,7 @@
                     <img class="d-block w-100 img-fluid" src="images/banner.png" alt="First slide">
                     <div class="carousel-caption d-none d-sm-block">
                         <div class="carousel-caption-content">
-                            <h5><span>I am</span> LOREM IPSUM</h5>
+                            <h5><span>I am</span> JAHANGIR HUSSEN</h5>
                             <p>Professional Web Designer & DeveloperInvolved with the
                                 latest web frameworks and technologies. If you have a
                                 project then feel free to contact me.</p>
@@ -147,6 +151,7 @@
             </a>
         </div>
     </section><!--    End Banner-section-->
+
 
     <!--    Start About-me-section-->
     <section class="about-me-section" id="about">
@@ -290,7 +295,7 @@
     </section><!--    End Skills-section-->
 
     <!--    Start Resume-section-->
-    <section class="resume-section py-5" id="resume">
+    <section class="resume-section" id="resume">
         <div class="container">
             <div class="row">
                 <div class="heading-text">
@@ -313,18 +318,47 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-body-content">
+                                    <a href="#" class="btn btn-resume">2005-2009</a>
+                                    <div class="resume-text">
+                                        <h5>OXFORD BROOKES UNIVERSITY</h5>
+                                        <h6>BSc Hons Applied Accountancy</h6>
+                                        <p>Degree obtained as part of Chartered Accountancy Qualification.Professional Qualification was awarded by the ACCA. The global body for professional accountants.</p>
+                                    </div>
+                                    <div class="card-resume-effect"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-body-content">
+                                    <a href="#" class="btn btn-resume">2005-2009</a>
+                                    <div class="resume-text">
+                                        <h5>UNIVERSITY OF GLAMORGAN</h5>
+                                        <h6>HNC Business Information Technology</h6>
+                                        <p>Degree obtained as part of Chartered Accountancy Qualification.Professional Qualification was awarded by the ACCA. The global body for professional accountants.</p>
+                                    </div>
+                                    <div class="card-resume-effect"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="resume-content">
-                        <h3>EDUCATION</h3>
+                        <h3>EXPERIENCE</h3>
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-body-content">
-                                    <a href="#" class="btn btn-resume">2018-2019</a>
+                                    <a href="#" class="btn btn-resume">2016-2019</a>
                                     <div class="resume-text">
-                                        <h5>CODE INSTITUE</h5>
+                                        <h5>UNIVERSITY OF EXETER</h5>
                                         <h6>Full Stack Software Development</h6>
                                         <p>Credit rated by Edinburgh Napier University. Learning the latest technologies as part of a full stack software development programme.</p>
                                     </div>
@@ -332,19 +366,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="resume-content">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-body-content">
                                     <a href="#" class="btn btn-resume">2018-2019</a>
                                     <div class="resume-text">
-                                        <h5>CODE INSTITUE</h5>
-                                        <h6>Full Stack Software Development</h6>
-                                        <p>Credit rated by Edinburgh Napier University. Learning the latest technologies as part of a full stack software development programme.</p>
+                                        <h5>QUINTESSENTIAL APPS LTD</h5>
+                                        <h6>BSc Hons Applied Accountancy</h6>
+                                        <p>Degree obtained as part of Chartered Accountancy Qualification.Professional Qualification was awarded by the ACCA. The global body for professional accountants.</p>
+                                    </div>
+                                    <div class="card-resume-effect"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-body-content">
+                                    <a href="#" class="btn btn-resume">2011-2012</a>
+                                    <div class="resume-text">
+                                        <h5>CODE WORLD</h5>
+                                        <h6>Information Technology Solutions</h6>
+                                        <p>Degree obtained as part of Chartered Accountancy Qualification.Professional Qualification was awarded by the ACCA. The global body for professional accountants.</p>
                                     </div>
                                     <div class="card-resume-effect"></div>
                                 </div>
@@ -352,104 +394,231 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="resume-content">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-body-content">
-                                    <a href="#" class="btn btn-resume">2018-2019</a>
-                                    <div class="resume-text">
-                                        <h5>CODE INSTITUE</h5>
-                                        <h6>Full Stack Software Development</h6>
-                                        <p>Credit rated by Edinburgh Napier University. Learning the latest technologies as part of a full stack software development programme.</p>
-                                    </div>
-                                    <div class="card-resume-effect"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="resume-content">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-body-content">
-                                    <a href="#" class="btn btn-resume">2018-2019</a>
-                                    <div class="resume-text">
-                                        <h5>CODE INSTITUE</h5>
-                                        <h6>Full Stack Software Development</h6>
-                                        <p>Credit rated by Edinburgh Napier University. Learning the latest technologies as part of a full stack software development programme.</p>
-                                    </div>
-                                    <div class="card-resume-effect"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="resume-content">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-body-content">
-                                    <a href="#" class="btn btn-resume">2018-2019</a>
-                                    <div class="resume-text">
-                                        <h5>CODE INSTITUE</h5>
-                                        <h6>Full Stack Software Development</h6>
-                                        <p>Credit rated by Edinburgh Napier University. Learning the latest technologies as part of a full stack software development programme.</p>
-                                    </div>
-                                    <div class="card-resume-effect"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section> <!--    END Resume-section-->
 
-    <section class="about-me-section" id="about">
-        <div class="container">
-                <div class="heading-text">
-                    <h1>MY EXPERTISE AREAS</h1>
-                    <h2>SKILLS</h2>
-                </div>
-<h2>Filter</h2>
-<div id="filters" class="button-group"> 
-  <button class="button is-checked" data-filter="*">show all</button>
-  <button class="button" data-filter=".metal">metal</button>
-  <button class="button" data-filter=".transition">transition</button>
-  <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
-  <button class="button" data-filter=":not(.transition)">not transition</button>
-</div>
-<div class="grid">
-    <div class="element-item transition metal " data-category="transition">
-       <img src="images/about-me.png" alt="" class="img-fluid">
-    </div>
-    <div class="element-item metalloid " data-category="metalloid">
-       <img src="images/about-me.png" alt="" class="img-fluid">
-    </div>
-    <div class="element-item post-transition metal " data-category="post-transition">
-       <img src="images/about-me.png" alt="" class="img-fluid">
-    </div>
-    <div class="element-item post-transition metal " data-category="post-transition">
-        <img src="images/about-me.png" alt="" class="img-fluid">
-    </div>
-    <div class="element-item transition metal " data-category="transition">
-        <img src="images/about-me.png" alt="" class="img-fluid">
-    </div>
-</div>
 
+
+    <!--  Start  Letest-Work-Section -->
+    <section class="letest-work-section overflow-hidden" id="work">
+        <div class="container">
+            <div class="heading-text">
+                <h1>LETEST PORTFOLIO</h1>
+                <h2>WORKS</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 work-content">
+                    <div class="button-group work-btn filter-button-group text-center">
+                        <button data-filter="*">all</button>
+                        <button data-filter=".metal">design</button>
+                        <button data-filter=".transition">web</button>
+                        <button data-filter=".alkali">interface </button>
+                        <button data-filter=".alkaline-earth">indentity</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item grid-item--width2 * alkaline-earth alkali mb-3">
+                            <a href="images/work-a1.png" class="img-fluid" data-lightbox="example-set"><img src="images/work-1.png" alt="" class="img-fluid" />
+                                <i class="fas fa-expand"></i>
+                            </a>
+
+                        </div>
+                        <div class="grid-item metal mb-3">
+                            <a href="images/work-a2.png" class="img-fluid" data-lightbox="example-set"><img src="images/work-2.png" alt="" class="img-fluid" />
+                                <i class="fas fa-expand"></i>
+                            </a>
+                        </div>
+                        <div class="grid-item  metal mb-3">
+                            <a href="images/work-a3.png" class="img-fluid" data-lightbox="example-set"><img src="images/work-3.png" alt="" class="img-fluid" />
+                                <i class="fas fa-expand"></i>
+                            </a>
+
+                        </div>
+                        <div class="grid-item grid-item--width2 metal  transition alkali mb-3">
+                            <a href="images/work-a4.png" class="img-fluid" data-lightbox="example-set"><img src="images/work-4.png" alt="" class="img-fluid" />
+                                <i class="fas fa-expand"></i>
+                            </a>
+
+                        </div>
+                        <div class="grid-item grid-item--width2  transition alkaline-earth alkali mb-3">
+                            <a href="images/work-a5.png" data-lightbox="example-set" class="img-fluid"><img src="images/work-5.png" alt="" /class="img-fluid"> <i class="fas fa-expand"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section><!--    End About-me-section-->
+    </section><!--  Start  Letest-Work-Section -->
+
+
+    <!--  Start  Next-Project-Section -->
+    <section class="next-project-section">
+        <div class="container">
+            <div class="next-project">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="next-project-contet">
+                            <h3>I'M AVAILABLE FOR</h3>
+                            <h2>YOUR NEXT PROJECT</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex">
+
+                        <!--Start modal-box-->
+                        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body mx-3">
+                                        <div class="md-form mb-5">
+                                            <i class="fas fa-user prefix grey-text"></i>
+                                            <input type="text" id="form34" class="form-control validate">
+                                            <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                                        </div>
+
+                                        <div class="md-form mb-5">
+                                            <i class="fas fa-envelope prefix grey-text"></i>
+                                            <input type="email" id="form29" class="form-control validate">
+                                            <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                                        </div>
+
+                                        <div class="md-form mb-5">
+                                            <i class="fas fa-tag prefix grey-text"></i>
+                                            <input type="text" id="form32" class="form-control validate">
+                                            <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                                        </div>
+
+                                        <div class="md-form">
+                                            <i class="fas fa-pencil prefix grey-text"></i>
+                                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                            <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End modal-box-->
+
+                        <!-- Have any question-->
+                        <div class="question-btn ">
+                            <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalContactForm">Have any question?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--  End  Next-Project-Section -->
+
+    <!--    Start GET-IN-TOUCH-Section-->
+    <section class="get-in-touch" id="contact">
+        <div class="container">
+            <div class="heading-text">
+                <h1>DROP ME A LINE</h1>
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <div class="row get-in-touch-content">
+                <div class="col-md-6">
+                    <!-- Default form contact -->
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 mb-4">
+                                <input type="text" class="form-control" required>
+                                <label class="write-text" for="formGroupExampleInput">First name</label>
+                            </div>
+                            <div class="form-group col-md-6 mb-4">
+                                <input type="email" class="form-control" required>
+                                <label class="write-text" for="exampleInputEmail1">Email</label>
+                            </div>
+
+                            <div class="form-group col-md-12 mb-4">
+                                <input class="form-control" type="text" required>
+                                <label class="write-text" for="exampleInputEmail1">Subject</label>
+                            </div>
+                            <div class="form-group col-md-12 mb-4">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <label class="write-text" for="exampleInputEmail1">Message</label>
+
+                            </div>
+                            <div class="btn-send col-md-12 text-right pt-3">
+                                <button type="submit" class="btn btn-send-message">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Default form contact -->
+                </div>
+                <div class="col-md-6">
+                    <!--Google map-->
+                    <div class="map embed-responsive embed-responsive-21by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38703692693!2d90.27923991057244!3d23.780573258035957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1554868716156!5m2!1sen!2sbd"></iframe>
+                    </div>
+                    <!--Google Maps-->
+                </div>
+            </div>
+        </div>
+    </section> <!--    End GET-IN-TOUCH-Section-->
+
+    <!-- Start Footer-Section -->
+    <footer class="footer-section">
+        <!--Social-Media-->
+        <div class="social-media">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="social-media-content">
+                            <a href="#"><i class="fab fa-github"></i>
+                                <h5>GITHUB</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="social-media-content">
+                            <a href="#"><i class="fab fa-linkedin-in"></i>
+                                <h5>LINKEDIN</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="social-media-content">
+                            <a href="#"><i class="fab fa-twitter"></i>
+                                <h5>TWITTER</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Social-Media-->
+        <div class="footer-top text-center mt-5">
+            <p>&copy; Loram Ipsum 2019. All rights reserved.</p>
+        </div>
+    </footer> <!-- End Footer-Section -->
+
+
+    <!-- Start Scrolling Section -->
+    <div class="scrolltop">
+        <a href="#" class="scrollup"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div><!-- End Scrolling Section -->
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/isotope.js"></script>
-    
-</body></html>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

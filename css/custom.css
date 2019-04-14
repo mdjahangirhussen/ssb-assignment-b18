@@ -8,36 +8,63 @@
 -----------------------------------------*/
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
-.h1, h1,.h2, h2,.h3, h3.h5, h5{
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3.h5,
+h5 {
     margin: 0 !important;
 }
-.btn:focus{
-        box-shadow:none;
+
+.btn:focus {
+    box-shadow: none;
 
 }
-.btn{
-     border-radius: 0;
+
+.btn {
+    border-radius: 0;
 
 }
-.btn-custom{
-    color:#fff;
+
+.btn-custom {
+    color: #fff;
     border: 2px solid #40AFCC;
     padding: 12px 28px;
     border-bottom-right-radius: 22px;
     margin-left: 20px;
-    
+
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-.btn-custom:hover{
-    color:#fff;
+
+.btn-custom:hover {
+    color: #fff;
     background: #40AFCC;
     border-bottom-left-radius: 22px;
-     border-bottom-right-radius:0px;
+    border-bottom-right-radius: 0px;
 }
+
+/*
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url('../images/loading.gif') no-repeat center center;
+}
+*/
+
+
 /*-----------------------------------------
 			02.header Css
 -----------------------------------------*/
@@ -56,7 +83,7 @@ body {
     padding-left: 10px !important;
     padding-right: 10px !important;
     font-size: 16px;
-    color: #fff !important;
+    /*    color: #fff !important;*/
     position: relative;
     z-index: 1;
     opacity: 0.9;
@@ -65,13 +92,13 @@ body {
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
-    
-    
+
+
 }
 
 .navbar-nav li a:hover {
     color: #fff !important;
-     opacity: 1;
+    opacity: 1;
 }
 
 .navbar-nav li a:after {
@@ -120,39 +147,54 @@ body {
     z-index: 100;
 }
 
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+    color: #fff;
+    background: #244852;
+    height: 77px;
+    border-bottom: 5px solid #40AFCC;
+
+}
+
 /*-----------------------------------------
 			03.banner-section Css
 -----------------------------------------*/
-.banner-section {}
-.carousel-caption{
+.carousel-caption {
     bottom: 30% !important;
 }
-.carousel-caption-content{}
-.carousel-caption-content h5{
+
+.carousel-caption-content h5 {
     font-size: 60px;
     color: #40AFCC;
     font-weight: 600;
 }
-.carousel-caption-content span{
+
+.carousel-caption-content span {
     color: #fff;
     font-weight: 100;
 }
-.carousel-caption-content p{
+
+.carousel-caption-content p {
     max-width: 410px;
     margin: 0 auto;
     font-weight: 100;
     padding: 41px 0;
 }
-.social-icon{
+
+.social-icon {
     position: absolute;
     right: -90px;
     top: 10%;
 }
+
 .social-icon li a {
-    color:#929292;
-    
+    color: #929292;
+
 }
-.social-icon li a i{
+
+.social-icon li a i {
     width: 35px;
     height: 35px;
     background: #fff;
@@ -161,188 +203,217 @@ body {
     border-radius: 50%;
     margin: 10px 0;
 }
-.social-icon li a i:hover{
+
+.social-icon li a i:hover {
     color: #fff;
     background: #40AFCC;
 }
-.social-icon li:last-child{
+
+.social-icon li:last-child {
     transform: rotate(-90deg);
     margin-top: 60%;
 }
-.carousel-control-next {
-/*    right: 0;*/
-    left: 0;
-    top: 10%;
-}
+
 .carousel-control-prev {
-    justify-content: flex-start;
-}
-.carousel-control-next {
-    justify-content: flex-start;
-/*    justify-content: flex-end; */
-}
-span.fas.fa-chevron-right{
     width: 40px;
     height: 25px;
-    line-height: 25px;
-    color: #fff;
     text-align: center;
-    padding-left: 10px;
+    top: 46%;
+    transition: all .4s ease;
 }
 
-span.fas.fa-chevron-left{
+
+.carousel-control-next {
+    left: 0;
+    top: 50%;
     width: 40px;
     height: 25px;
-    line-height: 25px;
+    text-align: center;
+    transition: all .4s ease;
+
+}
+
+.carousel-control-prev:hover {
+    width: 60px;
+    background: #282C2D;
+}
+
+.carousel-control-next:hover {
+    width: 60px;
+    background: #282C2D;
+}
+
+span.fas.fa-chevron-right {
     color: #fff;
-    text-align: left;
-    padding-left: 8px !important;
 }
-.carousel-control-prev:hover span.fas.fa-chevron-right,
-.carousel-control-next:hover span.fas.fa-chevron-left{
-     background: #282C2D;
+
+span.fas.fa-chevron-left {
+    color: #fff;
+    transition: all .4s ease;
 }
-carousel-control-prev:focus span.fas.fa-chevron-right,
-.carousel-control-next:focus span.fas.fa-chevron-left{
-   background: #282C2D;
+
+.carousel-control-prev:hover span.fas.fa-chevron-right {
+    padding-left: 20px;
 }
+
+.carousel-control-next:hover span.fas.fa-chevron-left {
+    padding-left: 20px;
+}
+
+
 
 /*-----------------------------------------
 			04.about-me-section Css
 -----------------------------------------*/
-.about-me-section{
-    padding: 100px 0;
+.about-me-section {
+    margin-top: 100px;
 }
-.about-me-content{}
-.about-me-content h1{
+
+.about-me-content h1 {
     color: #F7F7F7;
     font-size: 110px;
     font-weight: 800;
     padding-top: 20px;
-    font-family: fantasy;
     position: relative;
 }
-.about-me-content h2{
+
+.about-me-content h2 {
     position: absolute;
     content: "";
     left: 12%;
-    top: 24px;
+    top: 33px;
     color: #40AFCC;
     font-size: 58px;
     font-weight: 700;
 }
-.about-me-content p{
+
+.about-me-content p {
     font-size: 14px;
     color: #242424a6;
     max-width: 433px;
 }
 
+
 /*-----------------------------------------
 			04.about-me-section Css
 -----------------------------------------*/
-.skills-seciton{}
-.heading-text{
+.skills-seciton {
+    margin-top: 100px;
+}
+
+.heading-text {
     margin: 0 auto;
     position: relative;
 }
-.heading-text h1{
+
+.heading-text h1 {
     color: #F7F7F7;
     font-size: 110px;
     font-weight: 800;
-    font-family: fantasy;
     text-align: center;
 }
-.heading-text h2{
-     position: absolute;
-     content: "";
-     left: 50%;
-     top: 5px;
-     color: #40AFCC;
-     font-size: 58px;
-     font-weight: 700;
-     transform: translateX(-50%);
-     text-transform: uppercase;
+
+.heading-text h2 {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 13px;
+    color: #40AFCC;
+    font-size: 58px;
+    font-weight: 700;
+    transform: translateX(-50%);
+    text-transform: uppercase;
 }
-.skills-content{
+
+.skills-content {
     padding: 50px 0;
 }
-.font-end-content h3{
+
+.font-end-content h3 {
     text-align: center;
     font-size: 26px;
     color: #40afcc;
     font-weight: 600;
     padding: 0px 0 30px;
-} 
-.font-end-img-effect{
+}
+
+.font-end-img-effect {
     position: relative;
     overflow: hidden;
 }
-.font-end-img-effect::after{
+
+.font-end-img-effect::after {
     position: absolute;
     content: "";
     left: 0;
-    bottom:-100%;
+    bottom: -100%;
     width: 100%;
     height: 100%;
     background: #38302fb3;
     opacity: 0;
-    
+
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
 }
-.font-end-img-effect:hover::after{
-    bottom:0;
+
+.font-end-img-effect:hover::after {
+    bottom: 0;
     opacity: 1;
 }
+
 .font-end-img-effect p {
     color: #fff;
     position: absolute;
     content: "";
-    left:50%;
+    left: 50%;
     top: -100%;
     z-index: 1;
     text-align: center;
     text-transform: uppercase;
-    transform: translate(-50%,-100%); 
-    
+    transform: translate(-50%, -100%);
+
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
-   
+
 }
+
 .font-end-img-effect:hover.font-end-img-effect p {
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);
 }
 /*-----------------------------------------
 			05.Resume-Section Css
 -----------------------------------------*/
-.resume-section{}
-.resume-content{
+.resume-section {
+    margin-top: 100px;
 }
-.resume-content h3{
+
+.resume-content h3 {
     font-size: 22px;
     color: #aaaaaa;
     padding: 40px 0;
     font-weight: 600;
 }
-.card{
-     border: 0!important;
-     border-left: 2px solid #40AFCC !important;
-     border-radius: 0;
-     position: relative;
-     padding: 0 0 20px;
-    
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+
+.card {
+    border: 0 !important;
+    border-left: 2px solid #40AFCC !important;
+    border-radius: 0;
+    position: relative;
+    padding: 0 0 20px;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.card::after{
+
+.card::after {
     position: absolute;
     content: "";
     left: -10px;
@@ -354,188 +425,406 @@ carousel-control-prev:focus span.fas.fa-chevron-right,
     background: #40AFCC;
     line-height: 15px;
 }
-.card:hover.card::after{
+
+.card:hover.card::after {
     background: #fff;
-     box-shadow: 0px 0px 10px 2px #40afcca3;
+    box-shadow: 0px 0px 10px 2px #40afcca3;
 }
-.card-body{
-    padding: 0!important; 
+
+.card-body {
+    padding: 0 !important;
 }
+
 .card-body-content {
     background: #fff;
     margin-left: 20px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 6px 6px -1px transparent;
+
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }
-.card:hover .card-body-content{
+
+.card:hover .card-body-content {
     background: #fff;
     box-shadow: 0px 6px 6px -1px #40afcca3;
-}
-.resume-text{
     padding-left: 20px;
 }
-.card-body h5{
+
+.resume-text {
+    padding-left: 20px;
+}
+
+.card-body h5 {
     padding: 10px 0;
     font-size: 20px;
     font-weight: 600;
 }
-.card:hover .card-body h5{
-     color:#40AFCC;
+
+.card:hover .card-body h5 {
+    color: #40AFCC;
 }
-.card-body h6{
+
+.card-body h6 {
     font-size: 18px;
     font-weight: 400;
 }
-.card-body p{
+
+.card-body p {
     font-size: 14px;
     max-width: 400px;
     padding: 30px 0;
 }
-.card-resume-effect{
+
+.card-resume-effect {
     position: absolute;
-    width: 130px;
-    height: 130px;
-    border: 15px solid #D9EFF5;
-    right: -17px;
+    width: 150px;
+    height: 150px;
+    border: 22px solid #D9EFF5;
+    right: -30px;
     top: -50px;
     border-radius: 50%;
-     opacity: 0;
+    opacity: 0;
 }
-.card:hover .card-resume-effect{
+
+.card:hover .card-resume-effect {
     opacity: 1;
 }
-.btn-resume{
+
+.btn-resume {
     border: 1px solid #000;
     padding: 4px 10px;
     border-bottom-right-radius: 15px;
     margin-left: 20px;
 }
-.card:hover .btn-resume{
-    color:#40AFCC;
+
+.card:hover .btn-resume {
+    color: #40AFCC;
     border: 1px solid #40AFCC;
 }
-   
+
 /*-----------------------------------------
 			05.grid-item Css
 -----------------------------------------*/
-* { box-sizing: border-box; }
-
-/* ---- button ---- */
-
-.button {
-  display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
-  font-family: sans-serif;
-  font-size: 16px;
-  text-shadow: 0 1px white;
-  cursor: pointer;
+.letest-work-section {
+    margin-top: 100px;
 }
 
-.button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
-}
-
-.button:active,
-.button.is-checked {
-  background-color: #28F;
-}
-
-.button.is-checked {
-  color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
-
-.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
-/* ---- button-group ---- */
+.work-content {}
 
 .button-group {
-  margin-bottom: 20px;
+    padding: 50px 0;
 }
 
-.button-group:after {
-  content: '';
-  display: block;
-  clear: both;
+.grid {
+    background: #fff;
+    max-width: 1200px;
 }
-
-.button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
-}
-
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-
-/* ---- isotope ---- */
-
 
 /* clear fix */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
-/* ---- .element-item ---- */
 
-.element-item {
-  position: relative;
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  padding: 10px;
-  background: #888;
-  color: #262524;
+/* ---- .grid-item ---- */
+
+.grid-item {
+    float: left;
+    width: 24%;
+    height: auto;
+    background: #fff;
+    position: relative;
 }
 
-.element-item > * {
-  margin: 0;
-  padding: 0;
+.grid-sizer {
+    width: 25%;
 }
 
-.element-item .name {
-  position: absolute;
-
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 12px;
-  font-weight: normal;
+.grid-item--width2 {
+    width: 49%;
 }
 
-.element-item .symbol {
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 42px;
-  font-weight: bold;
-  color: white;
+.grid-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #40AFCCB3;
+    transform: scaleX(0);
+    transition: all .3s ease;
 }
 
-.element-item .number {
-  position: absolute;
-  right: 8px;
-  top: 5px;
+.grid-item:hover::after {
+    transform: scaleX(1);
 }
 
-.element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px;
+.grid-item i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(0);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.grid-item:hover.grid-item i {
+    transform: scale(1);
+
+}
+
+.work-btn button {
+    font-size: 20px;
+    background: transparent;
+    padding: 2px 20px;
+    color: #505050;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 10px;
+    border-bottom-right-radius: 15px;
+
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.work-btn button:focus {
+    outline: none;
+}
+
+.work-btn button:hover {
+    border-bottom-right-radius: 15px;
+    border: 2px solid #40afcc;
+    color: #40afcc;
+}
+
+
+
+/*-----------------------------------------
+			06.About-Me-Section Css
+-----------------------------------------*/
+.next-project-section {
+    margin-top: 100px;
+}
+
+.next-project {
+    background: url(../images/have-any-q.png) no-repeat;
+    background-size: cover;
+    padding: 45px;
+}
+
+.next-project-contet {
+    padding-left: 45px;
+}
+
+.next-project h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.next-project h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.question-btn {
+    align-self: center;
+}
+
+.btn-default {
+    color: #40AFCC;
+    background: #fff;
+    padding: 12px 35px;
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid #40AFCC;
+    border-bottom-right-radius: 26px;
+    box-shadow: 0px 4px 10px 5px #399DB7;
+
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-default:hover {
+    background: #40AFCC;
+    color: #fff;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 0px;
+}
+
+button.btn.btn-unique {
+    color: #40AFCC;
+    border: 2px solid #40AFCC;
+    padding: 12px 48px;
+    border-bottom-right-radius: 22px;
+    margin-left: 20px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+button.btn.btn-unique:hover {
+    color: #fff;
+    background: #40AFCC;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 0px;
+}
+
+/*-----------------------------------------
+    07.Start GET-IN-TOUCH-Section
+-----------------------------------------*/
+.get-in-touch {
+    margin-top: 100px;
+}
+
+.get-in-touch-content {
+    padding: 50px 0;
+}
+
+.map {
+    height: 332px;
+    border: 1px solid #AAAAAA;
+}
+
+.form-row {
+    position: relative;
+}
+
+.form-control {
+    border: 1px solid #40AFCC;
+    border-radius: 0;
+    padding: 30px 15px 20px;
+
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 1.5px #40AFCC;
+
+}
+
+.write-text {
+    position: absolute;
+    content: '';
+    left: 15px;
+    top: 15px;
+    transition: all .5s ease;
+    pointer-events: none;
+
+
+}
+
+.form-control:focus ~ .write-text,
+.form-control:valid ~ .write-text {
+    top: 0px;
+}
+
+textarea.form-control {
+    height: 180px;
+}
+
+.btn-send-message {
+    color: #F7F7F7;
+    background: #40AFCC;
+    padding: 12px 35px;
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid #40AFCC;
+    font-weight: 700;
+    border-bottom-right-radius: 26px;
+
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.btn-send-message:hover {
+    background: transparent;
+    color: #40AFCC;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 0px;
+}
+
+/*-----------------------------------------
+    08.Start Footer-Section
+-----------------------------------------*/
+.footer-section {
+    margin-top: 50px;
+}
+
+.social-media {}
+
+.social-media-content {
+    background: #F1FCFF;
+    padding: 30px 30px;
+    border-bottom-right-radius: 40px;
+}
+
+.social-media-content a {
+    color: #40AFCC;
+    text-decoration: none;
+}
+
+.social-media-content i {
+    font-size: 28px;
+    background: #40AFCC;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 8px;
+}
+
+.social-media-content h5 {
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.footer-top {
+    color: #ffffff;
+    background: #40AFCC;
+    padding: 20px 0;
+}
+
+.footer-top p {
+    margin-bottom: 0;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: none;
+    background: #40AFCCB3;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.scrollup i {
+    font-size: 20px;
+    color: #D8EFF5;
 }
