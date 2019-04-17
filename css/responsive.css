@@ -466,18 +466,22 @@
     .carousel-caption-content p {
         display: none;
     }
+
     .card-body h5 {
-    padding: 10px 0;
-    font-size: 14px;
-    max-width: 150px;
-}
+        padding: 10px 0;
+        font-size: 14px;
+        max-width: 150px;
+    }
+
     .card-body h6 {
-	font-size: 14px;
-    max-width: 150px;
-}
-.grid-item i {
-	font-size: 18px;
-}
+        font-size: 14px;
+        max-width: 150px;
+    }
+
+    .grid-item i {
+        font-size: 18px;
+    }
+
     .btn-custom {
         padding: 6px 10px;
         font-size: 12px;
@@ -493,18 +497,21 @@
     }
 
     .work-btn button {
-	font-size: 12px;
-	padding: 3px;
-	margin: 0;
-	border-radius: 0 !important;
-}
+        font-size: 12px;
+        padding: 3px;
+        margin: 0;
+        border-radius: 0 !important;
+    }
+
     .heading-text h1 {
-	font-size: 28px;
-}
+        font-size: 28px;
+    }
+
     .heading-text h2 {
-	top: 0px;
-	font-size: 18px;
-}
+        top: 0px;
+        font-size: 18px;
+    }
+
     .get-in-touch-content {
         padding: 50px 0 30px;
     }
@@ -589,10 +596,11 @@
         background: #3B5998;
         color: #fff;
     }
+
     .footer-top p {
-	margin-bottom: 0;
-	font-size: 14px;
-}
+        margin-bottom: 0;
+        font-size: 14px;
+    }
 
 }
 
