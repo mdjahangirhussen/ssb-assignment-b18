@@ -51,19 +51,46 @@ h5 {
     border-bottom-right-radius: 0px;
 }
 
-/*
-div#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff url('../images/loading.gif') no-repeat center center;
-}
-*/
 
+div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('../images/preloader.gif') no-repeat center center;
+}
+
+
+.heading-text {
+    margin: 0 auto;
+    position: relative;
+}
+
+.heading-text h1 {
+    color: #F7F7F7;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.heading-text h2 {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 15px;
+    color: #40AFCC;
+    font-size: 51px;
+    font-weight: 700;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+.lb-data .lb-details {
+    display: none;
+}
 
 /*-----------------------------------------
 			02.header Css
@@ -87,6 +114,7 @@ div#preloader {
     position: relative;
     z-index: 1;
     opacity: 0.9;
+    overflow: hidden;
 
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -269,24 +297,6 @@ span.fas.fa-chevron-left {
     margin-top: 100px;
 }
 
-.about-me-content h1 {
-    color: #F7F7F7;
-    font-size: 110px;
-    font-weight: 800;
-    padding-top: 20px;
-    position: relative;
-}
-
-.about-me-content h2 {
-    position: absolute;
-    content: "";
-    left: 12%;
-    top: 33px;
-    color: #40AFCC;
-    font-size: 58px;
-    font-weight: 700;
-}
-
 .about-me-content p {
     font-size: 14px;
     color: #242424a6;
@@ -299,30 +309,6 @@ span.fas.fa-chevron-left {
 -----------------------------------------*/
 .skills-seciton {
     margin-top: 100px;
-}
-
-.heading-text {
-    margin: 0 auto;
-    position: relative;
-}
-
-.heading-text h1 {
-    color: #F7F7F7;
-    font-size: 110px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.heading-text h2 {
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 13px;
-    color: #40AFCC;
-    font-size: 58px;
-    font-weight: 700;
-    transform: translateX(-50%);
-    text-transform: uppercase;
 }
 
 .skills-content {
@@ -386,6 +372,7 @@ span.fas.fa-chevron-left {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 /*-----------------------------------------
 			05.Resume-Section Css
 -----------------------------------------*/
@@ -570,8 +557,8 @@ span.fas.fa-chevron-left {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    transform: scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    transform: ;
     text-align: center;
     z-index: 1;
     color: #fff;
@@ -580,7 +567,7 @@ span.fas.fa-chevron-left {
 }
 
 .grid-item:hover.grid-item i {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
 
 }
 
