@@ -1,5 +1,5 @@
  $( window ).on("load", function() {
-        $("#preloader").fadeOut(1000,function(){$(this).remove()});
+        $("#preloader").fadeOut('slow',function(){$(this).remove()});
 });
 
 
